@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="de0c2d65-ed86-4de2-9dc7-c7861d176e4d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8089/Design_Time_Addresses/AL_SERVICE/AL_Service/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ddfa9ed0-2cbd-4b45-a88a-bf852b6c95d3" SourceId="1" SourceUrl="net.tcp://localhost:8089/Design_Time_Addresses/AL_SERVICE/AL_Service/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="00f7f597-5e2c-412b-bd0a-a3b696054511" SourceId="1" SourceUrl="net.tcp://localhost:8089/Design_Time_Addresses/AL_SERVICE/AL_Service/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="cce6c5b7-e7fc-4619-a323-494d5bc3e5da" SourceId="1" SourceUrl="net.tcp://localhost:8089/Design_Time_Addresses/AL_SERVICE/AL_Service/mex" />
+    <MetadataFile FileName="AL_SERVICE.DTO.xsd" MetadataType="Schema" ID="3172848a-a86c-4b77-b653-e4d6709a078d" SourceId="1" SourceUrl="net.tcp://localhost:8089/Design_Time_Addresses/AL_SERVICE/AL_Service/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="5f374617-91a1-46c6-ab44-46bf426d3836" SourceId="1" SourceUrl="net.tcp://localhost:8089/Design_Time_Addresses/AL_SERVICE/AL_Service/mex" />
+    <MetadataFile FileName="AL_SERVICE.xsd" MetadataType="Schema" ID="11c6b484-8f73-4f01-bebc-01a1c81ed367" SourceId="1" SourceUrl="net.tcp://localhost:8089/Design_Time_Addresses/AL_SERVICE/AL_Service/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AL_SERVICE.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AL_SERVICE.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/AL_SERVICE" />
+  <xs:complexType name="DTO_User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_CreateDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_IsOk" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="_Nike" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_Pass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_State" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_User" nillable="true" type="tns:DTO_User" />
+  <xs:complexType name="DTO_Login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsLogin" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LoginMess" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Messages" nillable="true" type="q1:ArrayOfanyType" />
+      <xs:element minOccurs="0" name="MyFriends" nillable="true" type="tns:ArrayOfDTO_Friend" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/AL_SERVICE" minOccurs="0" name="MyGroup" nillable="true" type="q2:ArrayOfGroupInfo" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/AL_SERVICE" minOccurs="0" name="MyMess" nillable="true" type="q3:UserInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_Login" nillable="true" type="tns:DTO_Login" />
+  <xs:complexType name="ArrayOfDTO_Friend">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTO_Friend" nillable="true" type="tns:DTO_Friend" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTO_Friend" nillable="true" type="tns:ArrayOfDTO_Friend" />
+  <xs:complexType name="DTO_Friend">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_Group" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="_Nike" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_Remark" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_Friend" nillable="true" type="tns:DTO_Friend" />
+  <xs:complexType name="DTO_SMess">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/AL_SERVICE" minOccurs="0" name="Despatcher" nillable="true" type="q4:UserInfo" />
+      <xs:element minOccurs="0" name="Furl1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReadType" type="xs:int" />
+      <xs:element minOccurs="0" name="SendDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SendToNum" nillable="true" type="tns:DTO_Friend" />
+      <xs:element minOccurs="0" name="type" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTO_SMess" nillable="true" type="tns:DTO_SMess" />
+</xs:schema>
